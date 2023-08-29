@@ -1,0 +1,74 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.top h2 {
+  color: black;
+  font-family: "Markazi Text", serif;
+  font-size: 3rem;
+}
+
+.columns {
+  display: flex;
+  gap: 10px;
+}
+
+.columns > article {
+  background-color: var(--lightgrey);
+  flex: 1 1;
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  color: var(--darkgrey);
+}
+
+.columns > article figure {
+  overflow: hidden;
+  max-height: 140px;
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+}
+
+.columns > article figure img {
+  width: 100%;
+}
+
+.columns > article .columnInfo {
+  padding: 20px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columns > article .columnInfo h3 {
+  font-family: "Markazi Text", serif;
+  font-size: 1.5rem;
+}
+
+.columns > article .columnInfo span {
+  color: var(--salmon);
+}
+
+.columns > article .columnDescription {
+  padding: 10px 20px 0;
+  min-height: 150px;
+}
+
+.columns > article .columnDescription p {
+  font-size: 0.9rem;
+}
+
+.columns > article .columnCTA {
+  padding: 0 20px 20px;
+}
+
+.columns > article .columnCTA a {
+  color: var(--darkgrey);
+  text-decoration: none;
+}
+
+.columns > article .columnCTA a:hover {
+  text-decoration: underline;
+  color: black;
+  transition: color 0.2s;
+}

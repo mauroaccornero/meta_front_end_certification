@@ -1,0 +1,53 @@
+@import url("../../../../../assets/styles/vars.css");
+
+.hero {
+  background-color: var(--green);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.hero > div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  color: var(--yellow);
+  font-family: "Markazi Text", serif;
+  font-size: 3.5rem;
+  line-height: 2.6rem;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Markazi Text", serif;
+  line-height: 2rem;
+}
+
+.hero p {
+  color: white;
+  width: 300px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.textBox {
+}
+
+.imageBox {
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  width: 270px;
+  height: 290px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imageBox img {
+  max-width: 100%;
+}

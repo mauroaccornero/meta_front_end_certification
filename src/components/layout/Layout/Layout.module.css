@@ -1,0 +1,24 @@
+@import url("../../../assets/styles/vars.css");
+
+.wrapper {
+  width: 670px;
+  margin: 0 auto;
+}
+
+.yellowButton {
+  background-color: var(--yellow);
+  color: black;
+  border-radius: var(--borderRadius);
+  padding: 10px 20px;
+  border: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.yellowButton:hover {
+  background-color: black;
+  color: var(--yellow);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}

@@ -1,0 +1,9 @@
+:root {
+  --green: rgb(73, 94, 87);
+  --yellow: rgb(244, 206, 20);
+  --salmon: rgb(238, 153, 114);
+  --salmonlight: rgb(251, 218, 187);
+  --lightgrey: rgb(237, 239, 238);
+  --darkgrey: rgb(51, 51, 51);
+  --borderRadius: 16px;
+}

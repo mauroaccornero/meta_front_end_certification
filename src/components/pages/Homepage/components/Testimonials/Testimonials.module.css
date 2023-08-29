@@ -1,0 +1,73 @@
+.wrapper {
+  background-color: var(--lightgrey);
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.wrapper h2 {
+  color: black;
+  font-family: "Markazi Text", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper p {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+}
+
+.wrapper p span{
+  font-size: 2rem;
+  line-height:1rem;
+  color:var(--darkgrey)
+}
+
+.columns {
+  display: flex;
+  gap: 10px;
+}
+
+.columns article {
+  flex: 1 1;
+  background-color: white;
+  padding: 20px;
+}
+
+.ratingBox{
+  display: flex;
+  gap: 5px;
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  align-items: center;
+  color: var(--salmon);
+}
+
+.ratingBox > div{
+  background-color: var(--lightgrey);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: block;
+}
+
+.ratingBox > div.positive{
+  background-color: var(--salmon);
+}
+
+.userInfo{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.userInfo figure{
+  width: 50px ;
+  height: 50px;
+  background-color: var(--darkgrey);
+  overflow: hidden;
+}
+.userInfo figure img{
+  height: 100%;
+}
