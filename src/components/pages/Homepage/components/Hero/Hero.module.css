@@ -51,3 +51,23 @@
 .imageBox img {
   max-width: 100%;
 }
+
+@media (max-width: 670px) {
+  .hero > div {
+    flex-direction: column;
+  }
+  .hero p {
+    width: auto;
+  }
+  .imageBox {
+    position: static;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin: 10px auto;
+  }
+  .imageBox img {
+    width: auto;
+    height: 100%;
+  }
+}

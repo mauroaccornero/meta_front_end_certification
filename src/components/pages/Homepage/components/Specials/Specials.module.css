@@ -72,3 +72,20 @@
   color: black;
   transition: color 0.2s;
 }
+
+@media (max-width: 670px) {
+  .top {
+    margin: 0 10px;
+  }
+  .columns {
+    flex-direction: column;
+    gap: 0;
+  }
+  .columns > article {
+    margin: 10px;
+    flex: auto auto;
+  }
+  .columns > article figure {
+    max-height: 250px;
+  }
+}

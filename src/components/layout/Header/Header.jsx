@@ -1,20 +1,40 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/img/Logo.svg";
-import styles from "./Header.module.css";
+import basket from "../../../assets/img/Basket.svg";
+import menuIcon from "../../../assets/img/🦆 icon _hamburger menu.svg";
+import headerStyles from "./Header.module.css";
 import layoutStyles from "../Layout/Layout.module.css";
+import { useState } from "react";
 function Header() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const linkCssClass = ({ isActive }) =>
     isActive
-      ? `${styles.navLink} ${styles.navLinkActive}`
-      : `${styles.navLink} `;
+      ? `${headerStyles.navLink} ${headerStyles.navLinkActive}`
+      : `${headerStyles.navLink} `;
 
   return (
-    <header className={`${styles.header} ${layoutStyles.wrapper}`}>
-      <NavLink to="/" className={styles.logo}>
+    <header className={`${headerStyles.header} ${layoutStyles.wrapper}`}>
+      <button
+        className={`${headerStyles.respMenuIcon} ${layoutStyles.respVisible}`}
+        onClick={() => setMenuIsOpen((prevState) => !prevState)}
+      >
+        <img src={menuIcon} alt={"Menu"} />
+      </button>
+      <NavLink to="/" className={headerStyles.logo}>
         <img src={logo} alt={"Little Lemon Restaurant"} />
       </NavLink>
-      <nav className={styles.menu}>
-        <ul className={"hstack"}>
+      <NavLink
+        to="/order-online"
+        className={`${layoutStyles.respVisible} ${headerStyles.orderOnlineIcon} `}
+      >
+        <img src={basket} alt={"Order online"} />
+      </NavLink>
+      <nav
+        className={`${headerStyles.menu} ${layoutStyles.respHidden} ${
+          menuIsOpen ? headerStyles.visibleMenu : headerStyles.hiddenMenu
+        }`}
+      >
+        <ul>
           <li>
             <NavLink to="/" className={linkCssClass}>
               Home

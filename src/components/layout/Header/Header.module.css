@@ -36,3 +36,50 @@
 .navLink.navLinkActive {
   text-decoration: underline;
 }
+
+.respMenuIcon {
+  border: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.orderOnlineIcon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu.visibleMenu,
+.menu.hiddenMenu {
+  display: flex;
+}
+
+@media (max-width: 670px) {
+  .menu.visibleMenu {
+    display: flex;
+  }
+  .menu.hiddenMenu {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+    border-top: 1px solid var(--lightgrey);
+    margin-top: 10px;
+  }
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+  .menu ul li a {
+    width: 100%;
+  }
+  .menu ul li a:hover {
+    background-color: var(--lightgrey);
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+}

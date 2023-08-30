@@ -22,3 +22,24 @@
     background-color 0.2s,
     color 0.2s;
 }
+
+.respVisible {
+  display: none;
+}
+
+.respHidden {
+  display: inherit;
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+  body .respVisible {
+    display: inherit;
+  }
+  body .respHidden {
+    display: none;
+  }
+}

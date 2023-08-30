@@ -1,64 +1,88 @@
-.columns{
-    display: flex;
-    margin-bottom: 100px;
-    padding: 20px 0;
+.columns {
+  display: flex;
+  margin-bottom: 100px;
+  padding: 20px 0;
 }
 
-.columns > *{
-    width: 50%;
+.columns > * {
+  width: 50%;
 }
 
+@media (max-width: 670px) {
+  .columns {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .columns > * {
+    width: auto;
+    margin: 10px;
+  }
+}
 
 .columns h2 {
-    color: var(--yellow);
-    font-family: "Markazi Text", serif;
-    font-size: 3.5rem;
-    line-height: 2.6rem;
+  color: var(--yellow);
+  font-family: "Markazi Text", serif;
+  font-size: 3.5rem;
+  line-height: 2.6rem;
 }
 
 .columns h3 {
-    color: var(--darkgrey);
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-family: "Markazi Text", serif;
-    line-height: 2rem;
+  color: var(--darkgrey);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Markazi Text", serif;
+  line-height: 2rem;
 }
 
 .columns p {
-    color: black;
-    width: 300px;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin-bottom: 10px;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 10px;
 }
 
-.imagesWrapper{
-    position: relative;
-    top:0;
+.imagesWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.imagesWrapper figure {
+  position: absolute;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 5px 5px var(--darkgrey);
+}
+
+.imagesWrapper figure.firstImage {
+  top: 150px;
+  left: 0;
+  z-index: 2;
+}
+
+.imagesWrapper figure.secondImage {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media (max-width: 670px) {
+  .imagesWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .imagesWrapper figure {
+    position: static;
+  }
+  .imagesWrapper figure.firstImage,
+  .imagesWrapper figure.secondImage {
+    top: 0;
     left: 0;
+  }
 }
 
-.imagesWrapper figure{
-    position: absolute;
-    overflow: hidden;
-    width: 200px;
-    height: 300px;
-    box-shadow: 0 5px 5px var(--darkgrey);
-}
-
-.imagesWrapper figure.firstImage{
-    top:150px;
-    left:0;
-    z-index:2;
-}
-
-.imagesWrapper figure.secondImage{
-    top:0;
-    right:0;
-    z-index:1;
-}
-
-.imagesWrapper figure img{
-    height: 300px;
-    margin-left: -200px;
+.imagesWrapper figure img {
+  height: 300px;
+  margin-left: -200px;
 }

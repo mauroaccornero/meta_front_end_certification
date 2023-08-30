@@ -1,0 +1,15 @@
+.text {
+  margin: 20px 0;
+}
+
+.text h1 {
+  margin: 20px 0;
+  font-size: 3rem;
+  font-family: "Markazi Text", serif;
+}
+
+.text a {
+  color: var(--darkgrey);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
