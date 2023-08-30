@@ -12,12 +12,12 @@
   margin-bottom: 20px;
 }
 
-.wrapper p {
+.wrapper cite {
   font-family: "Markazi Text", serif;
   font-size: 2rem;
 }
 
-.wrapper p span {
+.wrapper cite span {
   font-size: 2rem;
   line-height: 1rem;
   color: var(--darkgrey);

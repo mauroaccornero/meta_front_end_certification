@@ -6,7 +6,9 @@ function NotFound() {
     <section className={layoutStyles.wrapper}>
       <div className={notFoundStyles.text}>
         <h1>Page not found</h1>
-        <a href={"/"}>Back to home</a>
+        <a href={"/"} role="button">
+          Back to home
+        </a>
       </div>
     </section>
   );

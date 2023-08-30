@@ -12,22 +12,34 @@ function Footer() {
         <dl>
           <dt>Links</dt>
           <dd>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" role="button">
+              Home
+            </NavLink>
           </dd>
           <dd>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" role="button">
+              About
+            </NavLink>
           </dd>
           <dd>
-            <NavLink to="/menu">Menu</NavLink>
+            <NavLink to="/menu" role="button">
+              Menu
+            </NavLink>
           </dd>
           <dd>
-            <NavLink to="/reservations">Reservations</NavLink>
+            <NavLink to="/reservations" role="button">
+              Reservations
+            </NavLink>
           </dd>
           <dd>
-            <NavLink to="/order-online">Order Online</NavLink>
+            <NavLink to="/order-online" role="button">
+              Order Online
+            </NavLink>
           </dd>
           <dd>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/login" role="button">
+              Login
+            </NavLink>
           </dd>
         </dl>
         <dl>
@@ -37,22 +49,32 @@ function Footer() {
           <dd>01 23 45 67 890</dd>
           <dd>324 56 78 90 0</dd>
           <dd>
-            <a href="mailto:info@littlelemon.com">info@littlelemon.com</a>
+            <a href="mailto:info@littlelemon.com" role="button">
+              info@littlelemon.com
+            </a>
           </dd>
         </dl>
         <dl>
           <dt>Social</dt>
           <dd>
-            <a href="/">Facebook</a>
+            <a href="/" role="button">
+              Facebook
+            </a>
           </dd>
           <dd>
-            <a href="/">Instagram</a>
+            <a href="/" role="button">
+              Instagram
+            </a>
           </dd>
           <dd>
-            <a href="/">The Fork</a>
+            <a href="/" role="button">
+              The Fork
+            </a>
           </dd>
           <dd>
-            <a href="/">Twitter</a>
+            <a href="/" role="button">
+              Twitter
+            </a>
           </dd>
         </dl>
       </section>

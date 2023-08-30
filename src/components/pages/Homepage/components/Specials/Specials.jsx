@@ -28,7 +28,9 @@ function Specials() {
             </p>
           </div>
           <div className={specialsStyles.columnCTA}>
-            <a href="/">Order a delivery</a>
+            <a href="/" role="button">
+              Order a delivery
+            </a>
           </div>
         </article>
 
@@ -47,7 +49,9 @@ function Specials() {
             </p>
           </div>
           <div className={specialsStyles.columnCTA}>
-            <a href="/">Order a delivery</a>
+            <a href="/" role="button">
+              Order a delivery
+            </a>
           </div>
         </article>
 
@@ -67,7 +71,9 @@ function Specials() {
             </p>
           </div>
           <div className={specialsStyles.columnCTA}>
-            <a href="/">Order a delivery </a>
+            <a href="/" role="button">
+              Order a delivery{" "}
+            </a>
           </div>
         </article>
       </div>

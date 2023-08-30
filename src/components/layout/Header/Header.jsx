@@ -20,12 +20,13 @@ function Header() {
       >
         <img src={menuIcon} alt={"Menu"} />
       </button>
-      <NavLink to="/" className={headerStyles.logo}>
+      <NavLink to="/" className={headerStyles.logo} role="button">
         <img src={logo} alt={"Little Lemon Restaurant"} />
       </NavLink>
       <NavLink
         to="/order-online"
         className={`${layoutStyles.respVisible} ${headerStyles.orderOnlineIcon} `}
+        role="button"
       >
         <img src={basket} alt={"Order online"} />
       </NavLink>
@@ -36,32 +37,32 @@ function Header() {
       >
         <ul>
           <li>
-            <NavLink to="/" className={linkCssClass}>
+            <NavLink to="/" className={linkCssClass} role="button">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={linkCssClass}>
+            <NavLink to="/about" className={linkCssClass} role="button">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/menu" className={linkCssClass}>
+            <NavLink to="/menu" className={linkCssClass} role="button">
               Menu
             </NavLink>
           </li>
           <li>
-            <NavLink to="/reservations" className={linkCssClass}>
+            <NavLink to="/reservations" className={linkCssClass} role="button">
               Reservations
             </NavLink>
           </li>
           <li>
-            <NavLink to="/order-online" className={linkCssClass}>
+            <NavLink to="/order-online" className={linkCssClass} role="button">
               Order Online
             </NavLink>
           </li>
           <li>
-            <NavLink to="/login" className={linkCssClass}>
+            <NavLink to="/login" className={linkCssClass} role="button">
               Login
             </NavLink>
           </li>

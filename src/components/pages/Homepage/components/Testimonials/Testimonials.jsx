@@ -23,9 +23,9 @@ function Testimonials() {
               </figure>
               <span>Sarah Connor</span>
             </div>
-            <p>
+            <cite>
               <span>“</span>Friendly service and great products.<span>”</span>
-            </p>
+            </cite>
           </article>
           <article>
             <div className={testimonialsStyles.ratingBox}>
@@ -42,9 +42,9 @@ function Testimonials() {
               </figure>
               <span>John Smith</span>
             </div>
-            <p>
+            <cite>
               <span>“</span>I love Little Lemon!<span>”</span>
-            </p>
+            </cite>
           </article>
           <article>
             <div className={testimonialsStyles.ratingBox}>
@@ -61,9 +61,9 @@ function Testimonials() {
               </figure>
               <span>Robert Paulsen</span>
             </div>
-            <p>
+            <cite>
               <span>“</span>Fast delivery and great food.<span>”</span>
-            </p>
+            </cite>
           </article>
         </div>
       </div>
