@@ -1,7 +1,13 @@
-import layoutStyles from "../../layout/Layout/Layout.module.css";
+import Hero from "../../shared/Hero/Hero";
+import ReservationForm from "./components/ReservationForm/ReservationForm";
 
 function Reservations() {
-  return <div className={layoutStyles.wrapper}>this is the Reservations</div>;
+  return (
+    <>
+      <Hero />
+      <ReservationForm />
+    </>
+  );
 }
 
 export default Reservations;

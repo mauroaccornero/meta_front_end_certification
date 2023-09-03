@@ -1,6 +1,6 @@
-import layoutStyles from "../../../../layout/Layout/Layout.module.css";
+import layoutStyles from "../../layout/Layout/Layout.module.css";
 import heroStyles from "./Hero.module.css";
-import restaurantFood from "../../../../../assets/img/restauranfood.jpg";
+import restaurantFood from "../../../assets/img/restauranfood.jpg";
 function Hero() {
   return (
     <>
